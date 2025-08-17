@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shivam Rakhonde - Frontend Developer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Shivam Rakhonde - Frontend Web Developer & Python Developer Portfolio">
+	<meta name="keywords" content="frontend developer, web developer, react developer, python developer, shivam rakhonde">
+	<meta name="author" content="Shivam Rakhonde">
+	
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+	<style>
+		/* Hover Effects for Boxes and Contact Form */
+		.single-portfolio {
+			transition: all 0.3s ease;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+		
+		.single-portfolio:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+		}
+		
+		.single-portfolio:hover .overlay {
+			opacity: 0.8;
+		}
+		
+		.single-portfolio:hover .thumb img {
+			transform: scale(1.05);
+			transition: transform 0.3s ease;
+		}
+		
+		.site-form .form-control {
+			transition: all 0.3s ease;
+			border: 1px solid #ddd;
+		}
+		
+		.site-form .form-control:focus {
+			border-color: #007bff;
+			box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+			transform: translateY(-2px);
+		}
+		
+		.site-form .btn-primary {
+			transition: all 0.3s ease;
+			background: #007bff;
+			border: none;
+		}
+		
+		.site-form .btn-primary:hover {
+			background: #0056b3;
+			transform: translateY(-2px);
+			box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+		}
+		
+		.resume-item {
+			transition: all 0.3s ease;
+			border-left: 3px solid transparent;
+			padding-left: 15px;
+		}
+		
+		.resume-item:hover {
+			border-left-color: #007bff;
+			background: rgba(0,123,255,0.05);
+			transform: translateX(5px);
+		}
+		
+		.site-contact-details li {
+			transition: all 0.3s ease;
+			padding: 5px 0;
+		}
+		
+		.site-contact-details li:hover {
+			transform: translateX(5px);
+			color: #007bff;
+		}
+		
+		.site-contact-details li a {
+			transition: color 0.3s ease;
+		}
+		
+		.site-contact-details li a:hover {
+			color: #007bff;
+		}
+		
+		/* Smooth transitions for all interactive elements */
+		.btn, .nav-link, .social-item {
+			transition: all 0.3s ease;
+		}
+		
+		.btn:hover, .nav-link:hover, .social-item:hover {
+			transform: translateY(-2px);
+		}
+		
+		/* Portfolio hover effects */
+		.portfolio-item {
+			transition: all 0.3s ease;
+			cursor: pointer;
+		}
+		
+		.portfolio-item:hover {
+			transform: scale(1.02);
+			box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+		}
+		
+		/* Contact form enhancements */
+		.form-group {
+			transition: all 0.3s ease;
+		}
+		
+		.form-group:hover {
+			transform: translateY(-1px);
+		}
+		
+		/* Button hover effects */
+		.btn-primary:hover {
+			background: #0056b3;
+			transform: translateY(-2px);
+			box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+		}
+		
+		.btn-secondary:hover {
+			background: #545b62;
+			transform: translateY(-2px);
+			box-shadow: 0 5px 15px rgba(108,117,125,0.3);
+		}
+		
+		/* Navbar hover effects */
+		.navbar-nav .nav-link:hover {
+			color: #007bff;
+			transform: translateY(-2px);
+		}
+		
+		/* Section hover effects */
+		.site-section {
+			transition: all 0.3s ease;
+		}
+		
+		.site-section:hover {
+			box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		}
+		
+		/* Project description styling */
+		.project-description {
+			font-size: 14px;
+			line-height: 1.6;
+			color: #666;
+			margin-top: 15px;
+		}
+		
+		.project-description p {
+			margin-bottom: 8px;
+		}
+		
+		.project-description ul {
+			margin: 10px 0;
+			padding-left: 20px;
+		}
+		
+		.project-description li {
+			margin-bottom: 3px;
+			font-size: 13px;
+		}
+		
+		.project-description strong {
+			color: #333;
+		}
+		
+		.p-inner {
+			padding: 20px;
+		}
+		
+		.p-inner h4 {
+			margin-bottom: 10px;
+			color: #2c3e50 !important;
+			font-weight: 700;
+			font-size: 18px;
+			text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+		}
+		
+		.p-inner .cat {
+			color: #007bff;
+			font-size: 13px;
+			margin-bottom: 10px;
+			font-weight: 600;
+		}
+		
+		/* Enhanced project title visibility */
+		.single-portfolio .p-inner h4 {
+			color: #2c3e50 !important;
+			font-weight: 700;
+			font-size: 18px;
+			margin-bottom: 8px;
+			text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+		}
+		
+		.single-portfolio:hover .p-inner h4 {
+			color: #007bff !important;
+			transition: color 0.3s ease;
+		}
+	</style>
+</head>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="site-hero" style="background-image: url(images/image_1.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row intro-text align-items-center justify-content-center">
+				<div class="col-md-10 text-center" style="margin-top: -150px;">
+					<h1 class="site-heading site-animate" style="margin-bottom: 5px;">Hello, I'm <strong class="d-block" style="margin-top: 5px;">Shivam Rakhonde</strong></h1>
+					<strong class="d-block text-white text-uppercase letter-spacing" style="margin-top: 10px;">Frontend Web Developer & Python Developer</strong>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="site-section" id="section-portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="section-heading text-center col-md-12">
+					<h2>Featured <strong>Portfolio</strong></h2>
+				</div>
+			</div>
+			<div class="filters">
+				<ul>
+					<li class="active" data-filter="*">All</li>
+					<li data-filter=".web">Web Development</li>
+					<li data-filter=".game">Games</li>
+					<li data-filter=".frontend">Frontend</li>
+				</ul>
+			</div>
+
+			<div class="filters-content">
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all web frontend">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p1.jpg" alt="Hotel Management Website">
+							</div>
+							<a href="images/p1.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<h4>Hotel Management Website</h4>
+							<div class="cat">Frontend: HTML, CSS, JavaScript, React</div>
+						<div class="project-description mt-3">
+								<p><strong>Description:</strong> A comprehensive hotel management system featuring room booking, reservation management, and customer service portal. Built with modern React components and responsive design.</p>
+								<p><strong>Features:</strong></p>
+								<ul>
+									<li>Real-time room availability checking</li>
+									<li>Online booking and payment integration</li>
+									<li>Admin dashboard for hotel management</li>
+									<li>Customer review and rating system</li>
+									<li>Responsive design for all devices</li>
+								</ul>
+								<p><strong>Technologies Used:</strong> React.js, Redux, API, Bootstrap</p>
+								<div class="mt-4">
+									<a href="#" class="btn btn-primary btn-sm mr-2 view-project-btn" data-project="hotel-management">View Project</a>
+									<a href="#" class="btn btn-outline-primary btn-sm view-code-btn" data-project="hotel-management">View Code</a>
+								</div>
+							</div>
+						</div>                                         
+					</div>
+					
+					<div class="single-portfolio col-sm-4 all web frontend">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p2.png" alt="Organic Farming Website">
+							</div>
+							<a href="images/p2.png" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<h4>Organic Farming Website</h4>
+							<div class="cat">Frontend: HTML, CSS, JavaScript, React</div>
+						<div class="project-description mt-3">
+								<p><strong>Description:</strong> An e-commerce platform for organic farmers to sell fresh produce directly to consumers. Features product catalog, shopping cart, and secure checkout process.</p>
+								<p><strong>Features:</strong></p>
+								<ul>
+									<li>Product catalog with filtering and search</li>
+									<li>Shopping cart and wishlist functionality</li>
+									<li>Secure payment gateway integration</li>
+									<li>Farmer profiles and product reviews</li>
+									<li>Order tracking and delivery management</li>
+								</ul>
+								<p><strong>Technologies Used:</strong> React.js, Context API, CSS Grid, Flexbox</p>
+								<div class="mt-4">
+									<a href="#" class="btn btn-primary btn-sm mr-2 view-project-btn" data-project="organic-farming">View Project</a>
+									<a href="#" class="btn btn-outline-primary btn-sm view-code-btn" data-project="organic-farming">View Code</a>
+								</div>
+							</div>
+						</div>                                         
+					</div>
+					
+					<div class="single-portfolio col-sm-4 all game">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p3.jpg" alt="Snake Game">
+							</div>
+							<a href="images/p3.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<h4>Snake Game</h4>
+							<div class="cat">Python Game Development</div>
+						<div class="project-description mt-3">
+								<p><strong>Description:</strong> A classic Snake game built with Python featuring smooth gameplay, score tracking, and multiple difficulty levels. Includes both single-player and AI modes.</p>
+								<p><strong>Features:</strong></p>
+								<ul>
+									<li>Smooth snake movement and collision detection</li>
+									<li>Score tracking and high score persistence</li>
+									<li>Multiple difficulty levels (Easy, Medium, Hard)</li>
+									<li>AI mode with pathfinding algorithms</li>
+									<li>Sound effects and visual animations</li>
+								</ul>
+								<p><strong>Technologies Used:</strong> Python, Pygame, Object-Oriented Programming, Pathfinding Algorithms</p>
+								<div class="mt-4">
+									<a href="#" class="btn btn-primary btn-sm mr-2 view-project-btn" data-project="snake-game">View Project</a>
+									<a href="#" class="btn btn-outline-primary btn-sm view-code-btn" data-project="snake-game">View Code</a>
+								</div>
+							</div>
+						</div>                                         
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="site-section" id="section-resume">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>My <strong>Resume</strong></h2>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2 class="mb-5">Education</h2>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> 2021 - 2024</span>
+						<h3>Bachelor of Computer Science (BCS)</h3>
+						<p>Focused on web development, programming, and software engineering principles.</p>
+						<span class="school">Shri Shivaji College, Parbhani</span>
+						<span class="school">CGPA: 8.25</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> 2019 - 2021</span>
+						<h3>Higher Secondary Education (12th)</h3>
+						<p>Science stream with focus on computer applications and mathematics.</p>
+						<span class="school">Barashiv Hanuman Jr. College, Barashiv</span>
+						<span class="school">Percentage: 78%</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> 2019</span>
+						<h3>Secondary Education (10th)</h3>
+						<p>Foundation in science and mathematics with introduction to computer basics.</p>
+						<span class="school">N.V.S. Marathawada Highschool, Parbhani</span>
+						<span class="school">Percentage: 65%</span>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<h2 class="mb-5">Skills & Expertise</h2>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> Frontend Development</span>
+						<h3>Frontend Web Developer</h3>
+						<p>Creating responsive, user-friendly web applications using modern frontend technologies.</p>
+						<span class="school">Technologies: HTML5, CSS3, JavaScript, React.js</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> Programming</span>
+						<h3>Python Developer</h3>
+						<p>Developing applications and games using Python programming language.</p>
+						<span class="school">Skills: Python, Basic Java, SQL, Linux Ubuntu, Windows</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> Tools & Technologies</span>
+						<h3>Development Tools</h3>
+						<p>Proficient with modern development tools and version control systems.</p>
+						<span class="school">Tools: Git, VS Code, React Dev Tools, Chrome DevTools,Eclipse id, IntelliJ IDEA</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="site-section" id="section-about">
+		<div class="container">
+			<div class="row mb-5 align-items-center">
+				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+					<img src="images/profile.jpg" alt="Shivam Rakhonde" class="img-fluid" style="max-width: 350px; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+				</div>
+				<div class="col-lg-5 pl-lg-5">
+					<div class="section-heading">
+						<h2>About <strong>Me</strong></h2>
+					</div>
+					<p class="lead">I am a passionate Frontend Web Developer with strong knowledge of HTML, CSS, JavaScript, and React. I also have skills in Python, basic Java, SQL databases, and operating systems like Linux Ubuntu and Windows.</p>
+					<p class="mb-5">My main focus is frontend development, where I create responsive, user-friendly, and modern web applications. I love solving complex problems and bringing creative designs to life through code.</p>
+
+					<p>
+						<a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
+						<button type="button" class="btn btn-secondary px-4 py-2 btn-sm" onclick="openResumeModal()">View Resume</button>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<section class="site-section" id="section-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Get <strong>In Touch</strong></h2>
+					</div>
+				</div>
+
+				<div class="col-md-7 mb-5 mb-md-0">
+					<form action="https://formspree.io/f/xldlkjkn" class="site-form" method="POST">
+						<h3 class="mb-5">Get In Touch</h3>
+						<div class="form-group">
+							<input type="text" name="name" class="form-control px-3 py-4" placeholder="Your Name" required>
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control px-3 py-4" placeholder="Your Email" required>
+						</div>
+						<div class="form-group">
+							<input type="tel" name="phone" class="form-control px-3 py-4" placeholder="Your Phone">
+						</div>
+						<div class="form-group mb-5">
+							<textarea name="message" class="form-control px-3 py-4" cols="30" rows="10" placeholder="Write a Message" required></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary px-4 py-3" value="Send Message">
+						</div>
+					</form>
+				</div>
+				<div class="col-md-5 pl-md-5">
+					<h3 class="mb-5">My Contact Details</h3>
+					<ul class="site-contact-details">
+						<li>
+							<span class="text-uppercase">Email</span>
+							shivamrakhonde@gmail.com
+						</li>
+						<li>
+							<span class="text-uppercase">Phone</span>
+							+91 7666968850
+						</li>
+						<li>
+							<span class="text-uppercase">Location</span>
+							Pune, Maharashtra, India
+						</li>
+						<li>
+							<span class="text-uppercase">Social</span>
+							<a href="https://www.linkedin.com/in/shivam-rakhonde-062043287/" target="_blank">LinkedIn</a> | 
+							<a href="https://github.com/ShivaMERN" target="_blank">GitHub</a> | 
+							<a href="https://www.instagram.com/shivam_rakhonde45/" target="_blank">Instagram</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Resume Modal -->
+	<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="resumeModalLabel">Shivam Rakhonde - Resume</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe src="Frontend_Shivam_resume.pdf" class="embed-responsive-item" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<a href="Frontend_Shivam_resume.pdf" class="btn btn-primary" download="Shivam_Rakhonde_Resume.pdf">Download PDF</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row mb-5">
+				<p class="col-12 text-center">
+					Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | Portfolio by Shivam Rakhonde
+				</p>
+			</div>
+			<div class="row mb-5">
+				<div class="col-md-12 text-center">
+					<p>
+						<a href="https://www.linkedin.com/in/shivam-rakhonde-062043287/" class="social-item" target="_blank"><span class="icon-linkedin2"></span></a>
+						<a href="https://github.com/ShivaMERN" class="social-item" target="_blank"><span class="icon-github"></span></a>
+						<a href="https://www.instagram.com/shivam_rakhonde45/" class="social-item" target="_blank"><span class="icon-instagram2"></span></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.easing.1.3.js"></script>
+	<script src="js/vendor/jquery.stellar.min.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		function openResumeModal() {
+			$('#resumeModal').modal('show');
+		}
+
+		// Project navigation functionality
+		document.addEventListener('DOMContentLoaded', function() {
+			// Project URLs - Replace these with your actual project URLs
+			const projectUrls = {
+				'hotel-management': {
+					project: 'https://github.com/ShivaMERN?tab=repositories', // Your hotel management repositories
+					code: 'https://github.com/ShivaMERN'     // GitHub profile for all projects
+				},
+				'organic-farming': {
+					project: 'https://shivamern.github.io/shivam/', // Your organic farming website
+					code: 'https://github.com/ShivaMERN'     // GitHub profile for all projects
+				},
+				'snake-game': {
+					project: 'https://shivamern.github.io/snake-game/', // Your snake game
+					code: 'https://github.com/ShivaMERN'     // GitHub profile for all projects
+				}
+			};
+
+			// Add click handlers for project buttons
+			document.querySelectorAll('.view-project-btn').forEach(btn => {
+				btn.addEventListener('click', function(e) {
+					e.preventDefault();
+					const projectName = this.getAttribute('data-project');
+					const url = projectUrls[projectName]?.project;
+					if (url && url !== '#') {
+						window.open(url, '_blank');
+					} else {
+						alert(`Please add the project URL for ${projectName} in the JavaScript code`);
+					}
+				});
+			});
+
+			document.querySelectorAll('.view-code-btn').forEach(btn => {
+				btn.addEventListener('click', function(e) {
+					e.preventDefault();
+					const projectName = this.getAttribute('data-project');
+					const url = projectUrls[projectName]?.code;
+					if (url && url !== '#') {
+						window.open(url, '_blank');
+					} else {
+						alert(`Please add the code repository URL for ${projectName} in the JavaScript code`);
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>
